@@ -1,9 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import {
+  unstable_createMuiStrictModeTheme as createMuiTheme,
+  ThemeProvider,
+} from '@material-ui/core/styles';
+
 import Container from '@material-ui/core/Container';
-import Header from './components/Header';
+import Header from './components/Header/Header';
+import HomeScreen from './components/HomeScreen/HomeScreen';
 
 const theme = createMuiTheme({
   typography: {
@@ -17,7 +21,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Header />
         <Container>
-          <Typography variant='h5'>Body</Typography>
+          <Route path='/' component={HomeScreen} />
         </Container>
       </ThemeProvider>
     </Router>
