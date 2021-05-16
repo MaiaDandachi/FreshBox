@@ -5,7 +5,6 @@ import {
   ThemeProvider,
 } from '@material-ui/core/styles';
 
-import Container from '@material-ui/core/Container';
 import Header from './components/Header/Header';
 import HomeScreen from './components/HomeScreen/HomeScreen';
 
@@ -20,9 +19,7 @@ function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <Header />
-        <Container>
-          <Route path='/' component={HomeScreen} />
-        </Container>
+        <Route path='/' component={HomeScreen} />
       </ThemeProvider>
     </Router>
   );

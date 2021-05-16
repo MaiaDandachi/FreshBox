@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
       cursor: 'pointer',
     },
     color: 'black',
-    fontSize: '1.3rem',
+    fontSize: '1.1rem',
     fontWeight: '500',
     [theme.breakpoints.down('sm')]: {
       display: 'none',

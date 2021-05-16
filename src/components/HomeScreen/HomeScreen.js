@@ -1,9 +1,13 @@
 import React from 'react';
-
+import Landing from '../LandingSection/Landing';
+import Container from '@material-ui/core/Container';
 const HomeScreen = () => {
   return (
     <>
-      <h1>Body</h1>
+      <Landing />
+      <Container>
+        <h1>Body</h1>
+      </Container>
     </>
   );
 };
